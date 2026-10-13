@@ -1,0 +1,8 @@
+# Use the official Nginx base image from Docker Hub
+FROM nginx:alpine
+
+# Copy custom index.html into the Nginx web root folder
+COPY index.html /usr/share/nginx/html/index.html
+
+# Expose port 80 to access the web server
+EXPOSE 80
